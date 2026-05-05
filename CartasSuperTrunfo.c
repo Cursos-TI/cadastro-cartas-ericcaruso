@@ -18,13 +18,13 @@ int main() {
     scanf(" %s", estado_1);
     printf("Digite a CIDADE da carta 1:\n");
     scanf(" %s", cidade_1);
-    printf("Digite a POPULACAO da carta 1:\n");
+    printf("Digite a POPULACAO da carta 1 exemplo: 14000 \n");
     scanf(" %i", &populacao_1);
-    printf("Digite a Quantidade de pontos turisticos da carta 1:\n");
+    printf("Digite a Quantidade de pontos turisticos da carta 1 exemplo: 50 \n");
     scanf(" %i", &turistico_1);
-    printf("Digite a AREA em KM da carta 1:\n");
+    printf("Digite a AREA em KM da carta 1 exemplo: 145.200 \n");
     scanf(" %f", &area_1);
-    printf("Digite o PIB da carta 1:\n");
+    printf("Digite o PIB da carta 1 exemplo: 145.120 \n");
     scanf(" %f", &pib_1);
 
     //Coletando e armazenando dados nas variaveis carta 2
@@ -35,13 +35,13 @@ int main() {
     scanf(" %s", estado_2);
     printf("Digite a CIDADE da carta 2:\n");
     scanf(" %s", cidade_2);
-    printf("Digite a POPULACAO da carta 2:\n");
+    printf("Digite a POPULACAO da carta 2 exemplo: 124.500 \n");
     scanf(" %i", &populacao_2);
-    printf("Digite a Quantidade de pontos turisticos da carta 2:\n");
+    printf("Digite a Quantidade de pontos turisticos da carta 2 exemplo: 254.000 \n");
     scanf(" %i", &turistico_2);
-    printf("Digite a AREA em KM da carta 2:\n");
+    printf("Digite a AREA em KM da carta 2 exemplo: 465.210 \n");
     scanf(" %f", &area_2);
-    printf("Digite o PIB da carta 2:\n");
+    printf("Digite o PIB da carta 2 exemplo: 324.255 \n");
     scanf(" %f", &pib_2);
 
     //Efetuar Calculos de densidade Populacional e PIB per Capita
@@ -81,6 +81,14 @@ int main() {
     printf("Densidade Populacional: %.2f \n" , densidade_2);
     printf("PIB per Capita: %.2f \n" , pib_percapta_2);
       
+    printf("\n");
+    printf("########## RESULTADO ##########\n");
+    printf("Populacao da carta 1 e maior que a 2: (%i)\n", (populacao_1 > populacao_2));
+    printf("Area da carta 1 e maior que a 2: (%i)\n", (area_1 > area_2));
+    printf("PIB da carta 1 e maior que a 2: (%i)\n", (pib_1 > pib_2));
+    printf("Pontos turisticos carta 1 venceu ?: (%i)\n", (turistico_1 > turistico_2));
+    printf("Densidade populacional carta 1 venceu? (%i)\n", (densidade_1 < densidade_2));
+    printf("PIB per Capita carta 1 venceu ? (%i)\n", (pib_percapta_1 > pib_percapta_2));
 
     return 0;
 
